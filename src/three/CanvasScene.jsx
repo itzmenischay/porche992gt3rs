@@ -10,6 +10,8 @@ export default function CanvasScene() {
         gl={{ antialias: true, alpha: false, powerPreference: "high-performance" }}
         dpr={[1, 2]}
         className="pointer-events-auto"
+        eventSource={document.body}
+        eventPrefix="client"
         onCreated={({ camera }) => camera.lookAt(0, 0, 0)}
       >
         <color attach="background" args={['#050505']} />

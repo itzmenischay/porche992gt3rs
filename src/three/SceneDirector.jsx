@@ -1,4 +1,5 @@
 import CarModel from './CarModel'
+import ModelGroup from './ModelGroup'
 // import CameraRig from './CameraRig'
 // import EnvironmentComponent from './Environment'
 import Lights from './Lights'
@@ -19,7 +20,9 @@ export default function SceneDirector() {
         resolution={1024} 
         color="#000000" 
       /> */}
-      <CarModel />
+      <ModelGroup>
+        <CarModel />
+      </ModelGroup>
     </>
   )
 }
