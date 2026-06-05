@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-bg-1: #050505;
+  --color-dark-bg-2: #111111;
+  --color-dark-bg-3: #1A1A1A;
+
+  --font-heading: "Clash Display", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-numbers: "Space Grotesk", sans-serif;
+  --font-mono: "Geist", monospace;
+}
+
+body {
+  background-color: var(--color-dark-bg-1);
+  color: white;
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Base styles for hiding scrollbar visually while keeping functionality */
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
